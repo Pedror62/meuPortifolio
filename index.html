@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Lora:wght@500&family=Merriweather:ital,wght@0,300;1,300&family=Roboto:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Lora:wght@500&family=Merriweather+Sans:ital@1&family=Merriweather:ital,wght@0,300;1,300&family=Playpen+Sans:wght@300&family=Roboto:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Lora:wght@500&family=Merriweather:ital,wght@0,300;1,300&family=Playpen+Sans:wght@300&family=Roboto:ital@0;1&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a59fad765f.js" crossorigin="anonymous" defer></script>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.stribgs.css">
+
+
+    <script src="./componentes/scrool.js" defer></script>
+    <script src="./componentes/cards.js" defer></script>
+    <script src="./componentes/referencias.js" defer></script>
+    <script src="./componentes/text.js" defer></script>
+    <script src="./componentes/scroollElemts.js" defer></script>
+    <script src="./componentes/nuvem.js" defer></script>
+
+
+    <link rel="shortcut icon" href="./img/code2-icon-png-9.jpg" type="image/x-icon">
+    <title>Pedro Henrique</title>
+
+</head>
+
+<body>
+    <main>
+        <div class="navBar">
+            <nav>
+                <ul>
+                    <li class="back-to-home" onclick="scrollToTop()">
+                        <i class="fas fa-home"></i>Topo<a href="#"></a>
+                    </li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#Sobremim">Sobre mim</a></li>
+                    <li><a href="#thec">Tecnologias</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="testeFundo">
+
+                <div class="nome">
+                    <h1>Pedro <br><span>Henrique</span></h1>
+                    <img src="./img/code2-icon-png-9.jpg" alt="icone codigo fonte" srcset="">
+                </div>
+                <h2 id="text"></h2>
+
+                <div id="redes">
+
+                    <div class="hidden">
+                        <a href="https://github.com/Pedror62" target="_blank">
+                            <img src="./img/github-100.png" alt="github">
+                        </a>
+                    </div>
+                    <div class="hidden">
+                        <a href="https://www.instagram.com/pedror62/" target="_blank">
+                            <img src="./img/instagram-100.png" alt="instagram">
+                        </a>
+                    </div>
+                    <div class="hidden">
+                        <a href="https://www.linkedin.com/in/-pedro-henrique/" target="_blank">
+                            <img src="./img/linkedin-100.png" alt="linkedin">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+           <section class="ondas-boxes">
+
+                <div class="tituli">
+                    <h1>Sobre o <span>Projeto</span></h1>
+                    <p>A visão deste projeto não é apresentar o melhor projeto já feito, mas sim
+                        destacar os desafios mais significativos enfrentados em cada etapa da aprendizagem.</p>
+                </div>
+                <div class="onda" id="onda1"></div>
+                <div class="onda" id="onda2"></div>
+                <div class="onda" id="onda3"></div>
+                <div class="onda" id="onda4"></div>
+            </section>
+
+
+
+            <section id="projetos">
+                <div></div>
+                <h1>Meus <span>Projetos</span></h1>
+
+                <div class="raiz">
+                    <div class="background">
+                        
+                            <div id="cards_projetos">
+
+                         
+                            <div class="card1" class="hidden">
+                                <card-news chamada="Tabuada" class="projet1" photo="./img/taboada.png"
+                                    paragrafo="após a adição de um determinado número é possível o retorno da Tabuada" .
+                                    url-link="https://pedror62.github.io/contador-/" target="_blank">
+                                </card-news>
+                            </div>
+                           <div class="card2" class="hidden">
+                                <card-news photo="./img/ToDoList.png" chamada="To Do List" paragrafo="Lista De  Afazeres onde foi possível a aplicação do CRUD, utilizado 
+                        para se desenvolver essa aplicação. " url-link="https://pedror62.github.io/To_Do_List/"
+                                    target="_blank">
+                                </card-news>
+                            </div>
+                            <div class="card3" class="hidden">
+                                <card-news class="projet3" photo="./img/site_idade.png" chamada="Contatdor De Idade"
+                                    paragrafo="Aplicação feita em JavaScript, na qual, com base na data inserida no campo de entrada,
+                                     retorna uma pessoa de acordo com a idade especificada "
+                                    url-link="https://pedror62.github.io/condioes-02/" target="_blank">
+                                </card-news>
+                            </div>
+                            <div class="card4" class="hidden">
+                                <card-news class="projet3" photo="./img/geradordeQRcode.png"
+                                    chamada="Gerador de Qr Code" paragrafo="Esta aplicação gera um QR Code após a adição de um link ou palavra, permitindo que seja escaneado. 
+                                    A aplicação utiliza HTML, CSS, JavaScript e consome uma API. "
+                                    url-link="https://pedror62.github.io/geradorDeQrCode/" target="_blank">
+                                </card-news>
+                            </div>
+                            <div class="card5" class="hidden">
+                                <card-news class="projet3" photo="./img/capculadoraIMC.png" chamada="Calculadora IMC"
+                                    paragrafo="Aplicação feita em JavaScript, após a adição das informações nos campos e o cálculo do
+                                    paciente é feito, retornando se o peso do mesmo está de acordo com sua altura. "
+                                    url-link="https://pedror62.github.io/CalculadoraIMC/" target="_blank">
+                                </card-news>
+                            </div>
+                            <div class="card6" class="hidden">
+                                <card-news class="projet3" photo="./img/siteApple.png" chamada="Projeto Site Apple"
+                                    paragrafo="site de vendas do Iphone iPhone 13 pro, utilzando HTML,CSS e JavaScript "
+                                    url-link="https://pedror62.github.io/projeto_paginaApple/ ">
+                                </card-news>
+                            </div>
+                            <div class="card7" class="hidden">
+                                <card-news class="projet3" photo="./img/previsão.png" chamada="Previsão Do Tempo "
+                                    paragrafo="Projeto criado em React + Vite utilizando a API OpenWeatherMap. Projeto em desenvolvimento para melhorias, responsividade e criação de novas funcionalidades."
+                                    url-link="https://pedror62.github.io/clima/" target="_blank">
+                                </card-news>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                    </div>
+            </section>
+            <hr>
+
+
+            <section id="Sobremim">
+                <div class="apresetacao">
+                    <h1>Sobre <span>mim</span> </h1>
+                    <p>Sou estudante de Análise e Desenvolvimento de Sistemas, voltado para a programação front-end.
+                        Estou empenhado em aprimorar minhas habilidades e conhecimentos na criação de interfaces de
+                        usuário atraentes e funcionais.
+                        Meu objetivo é tornar a experiência do usuário mais agradável e eficiente, aplicando técnicas de
+                        design
+                        e programação para desenvolver sites e aplicativos web de alta qualidade.</p>
+                </div>
+            </section>
+
+
+            <section id="thec" class="hidden">
+                <br>
+                <h1>Tecnologias</h1>
+
+                <div class="logos">
+                    <div class="hidden">
+                        <p>html <img src="./img/icons8-html-48.png" alt="imagem HTML" srcset=""></p>
+                    </div>
+                    <div class="hidden">
+                        <p>Css3 <img src="./img/css3-48.png" alt=""></p>
+                    </div>
+                    <div class="hidden">
+                        <p>Javascript <img src="./img/js-48.png" alt="" srcset=""></p>
+                    </div>
+                    <div class="hidden">
+                        <p>React <img src="./img/react-48.png" alt="" srcset=""></p>
+                    </div>
+                    <div class="hidden">
+                        <p>Dart <img src="./img/dart-48.png" alt="" sizes="" srcset=""></p>
+                    </div>
+                    <div class="hidden">
+                        <p>Flutter <img src="./img/flutter-48.png" alt="" srcset=""></p>
+                    </div>
+                    <div class="hidden">
+                        <p>MySql <img src="./img/sql-48.png" alt="" srcset=""></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="pe" class="lest-One">
+            <p>&copy;Pedro</p>
+        </footer>
+
+    </main>
+</body>
+
+</html>
