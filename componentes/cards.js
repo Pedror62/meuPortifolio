@@ -64,6 +64,14 @@ class CardsNews extends HTMLElement {
             height: 183px;
             width: 293px;
             align-items: center;
+
+            border-radius: 0px 0px 18px 17px;
+-webkit-border-radius: 0px 0px 18px 17px;
+-moz-border-radius: 0px 0px 18px 17px;
+
+ box-shadow: -3px 17px 19px -12px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -3px 17px 19px -12px rgba(0,0,0,0.75);
+                -moz-box-shadow: -3px 17px 19px -12px rgba(0,0,0,0.75);
          
         }
       
@@ -71,10 +79,15 @@ class CardsNews extends HTMLElement {
         .raiz{
             width: 263px;
             height: 310px;
-            background-color: #ccc;
-            box-shadow: -16px 10px 86px 38px rgba(0,0,0,0.39);
-            -webkit-box-shadow: -16px 10px 86px 38px rgba(0,0,0,0.39);
-            -moz-box-shadow: -16px 10px 86px 38px rgba(0,0,0,0.39); 
+           
+            
+            
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
         }
         
        
@@ -109,8 +122,8 @@ class CardsNews extends HTMLElement {
             display: inline-block;
 
             padding: 10px 20px;
-            background-color: #007bff; 
-            color: #fff; 
+            background-color: #ffa500; 
+             color: #000; 
             text-decoration: none; 
             border: none;
             border-radius: 4px;
@@ -119,10 +132,18 @@ class CardsNews extends HTMLElement {
             transition: background-color 0.3s ease;
 
             font-size: 18px;
+
+
+            
              }     
                 
-                
+             a:hover{
+                box-shadow: -3px 17px 19px -12px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -3px 17px 19px -12px rgba(0,0,0,0.75);
+                -moz-box-shadow: -3px 17px 19px -12px rgba(0,0,0,0.75);
+             }
            
+      
       
             
         }
