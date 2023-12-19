@@ -69,7 +69,7 @@ li a::after {
    
 }
 li a:hover::after{
-    width:11%;
+    width:9%;
 }
 
 
