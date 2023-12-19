@@ -17,3 +17,15 @@ function showText(el, text, interval){
 }
 
 showText(el, text, interval);
+
+// function screti9(elemento) {
+//     const textwhirt = elemento.innerHTML.split('');
+//     elemento.innerHTML = ' ';
+//     testeArray.forEach((letra, i) => {
+//         setTimeout(() => elemento.innerHTML += letra, 75 * i);
+//     });
+
+// }
+    
+// const el = document.querySelector("h1");
+// screti9(text);

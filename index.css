@@ -24,28 +24,21 @@ span{
     display: flex;
     text-align: center;
     position: fixed;
-
     z-index: 1100;
-
-
     border-radius:  0px 0px 15px 15px;
 -webkit-border-radius: 0px 0px 3px 4px;
 -moz-border-radius: 0px 0px 3px 4px;
     box-shadow:  4px 9px 11px rgba(0,0,0,0.6);
-
     width: 100%;
-   
-   
+     
 }
 
 nav li.back-to-home  {
-    
     display: flow;
     color:#fff;
 }
 .navBar li{
-    display: flex;
-   
+    list-style:none;
 }
 
 ul{
@@ -53,18 +46,33 @@ ul{
     justify-content: space-between;
     gap: .5rem;
 
-    margin: 0;
-    padding: 0;
 }
 li a {
     display:flex;
-    gap: .5rem;
+    list-style:none;
     text-decoration:none;
     color:black;
     font-width:bolde; 
     color:#E7FFC6;
     text-transform: uppercase;
+    position:relaive;
 }
+li a::after {
+    content: " ";
+    width:0%;
+    height:4px;
+    background-color:#FFA500;
+    position:absolute;
+    bottom: 4px;
+    border-radius:3px;
+    transition: 0.5s ease-in-out;
+   
+}
+li a:hover::after{
+    width:11%;
+}
+
+
 #redes{
     display: flex;
     justify-content: center;
@@ -77,6 +85,7 @@ li a {
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-color: #FFA500;
 }
 .apresetacao p,{
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -261,6 +270,23 @@ section#projetos{
     font-weight: 900;
     color:#fff;
 }
+#text::after{
+    content: '|';
+    color:#FFA500;
+   border-radius:33px;
+    margin-left:6px;
+    opacity:1;
+    animation: piscapisca 1s infinite;
+}
+@keyframes piscapisca{
+    0%, 100% {
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+ }
+
 h1, h2{
     color: #000;
     font-weight: bold;
@@ -270,8 +296,9 @@ h1, h2{
     font-family:'Merriweather', 'Roboto';
 }
 hr{
-    color:#ccc;
+    color:#FFA500;
     margin-top: 0;
+     
 }
 .apresetacao p{
     color:#fff;
@@ -407,25 +434,24 @@ section#thec.hidden{
     background-color:#646778;
     max-width:100%;
     border-radius: 27px 26px 16px 10px;
--webkit-border-radius: 27px 26px 16px 10px;
--moz-border-radius: 27px 26px 16px 10px;
-
-
+    -webkit-border-radius: 27px 26px 16px 10px;
+    -moz-border-radius: 27px 26px 16px 10px;
+    border: solid 1px #FFA500;
     list-style: none; 
     text-align: center; 
     padding-top: 1rem; 
     
-  }
+}
   
 .logos .hidden {
     display: inline-block; 
     margin: 0 10px; 
-  }
+}
   
 .logos .hidden img {
     display: block; 
     margin: 0 auto 5px; 
-  }
+}
   
 .logos .hidden p {
     margin: 0;
@@ -435,15 +461,12 @@ section#thec.hidden{
     height: 95%;
     color:#fff;
     font-family:roboto;
-
     border-radius: 0px 7px 7px 7px;
     -webkit-border-radius: 0px 7px 7px 7px;
     -moz-border-radius: 0px 7px 7px 7px;
     border: 1px solid #ff6550;
-
 }
 .pe{
-
     background-color:#FFA500;
     height:50px;
     margin-top:5rem;

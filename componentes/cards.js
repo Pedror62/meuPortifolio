@@ -64,24 +64,19 @@ class CardsNews extends HTMLElement {
             height: 183px;
             width: 293px;
             align-items: center;
-
             border-radius: 0px 0px 18px 17px;
--webkit-border-radius: 0px 0px 18px 17px;
--moz-border-radius: 0px 0px 18px 17px;
-
- box-shadow: -3px 17px 19px -12px rgba(0,0,0,0.75);
+            -webkit-border-radius: 0px 0px 18px 17px;
+            -moz-border-radius: 0px 0px 18px 17px;
+            box-shadow: -3px 17px 19px -12px rgba(0,0,0,0.75);
                 -webkit-box-shadow: -3px 17px 19px -12px rgba(0,0,0,0.75);
                 -moz-box-shadow: -3px 17px 19px -12px rgba(0,0,0,0.75);
-         
         }
-      
-        }
+            
+    }
+           
         .raiz{
             width: 263px;
-            height: 310px;
-           
-            
-            
+            height: 310px;        
             background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -91,9 +86,7 @@ class CardsNews extends HTMLElement {
         }
         
        
-        span{
-        
-          
+        span{                
             height: 183px;
             width: 247px;
             padding-top: -3rem;
@@ -102,8 +95,7 @@ class CardsNews extends HTMLElement {
             height: -11px;
             margin-left: auto;
             margin-right: auto;
-        
-            width: 95%;
+                    width: 95%;
             font-weight: 700;
             font-size: 19px;
             
@@ -118,9 +110,7 @@ class CardsNews extends HTMLElement {
             padding: 15px 15px;
             margin-bottom: 21px;
             margin-left: 2rem;
-
             display: inline-block;
-
             padding: 10px 20px;
             background-color: #ffa500; 
              color: #000; 
@@ -130,8 +120,8 @@ class CardsNews extends HTMLElement {
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-
             font-size: 18px;
+            transition: 0.5s ease-in-out;
 
 
             
